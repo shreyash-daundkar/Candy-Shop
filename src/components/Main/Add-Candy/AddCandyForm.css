@@ -1,0 +1,29 @@
+.margin-top-10 {
+    margin-top: 8rem;  
+}
+
+.add-candy-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 5rem;
+}
+
+.unit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.unit input {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.unit label {
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.add-btn {
+    height:2rem;
+    width:7rem;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    /* flex-direction: column;
+    justify-content:space-around; */
+    gap: 1rem;
+    align-items: center;
+}
+
+.quantity {
+    font-weight: bold;
+}
+
+#quantity {
+    width:3rem;
+    height: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}

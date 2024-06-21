@@ -1,0 +1,58 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #4d1601;
+    color: white;
+    padding: 0.75rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.small-btn {
+  border-radius: 10px;
+  padding: 0.1rem 1rem;
+} 
+
+.sec-btn {
+  color: #4d1601;
+  background-color: white;
+  border: 2px solid #4d1601;
+}
+
+.button:hover,
+.button:active {
+    background-color: #2c0d00;
+}
+
+.sec-btn:hover,
+.sec-btn:active {
+    background-color: #4d1601;
+    color: white;
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+  
+@keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
