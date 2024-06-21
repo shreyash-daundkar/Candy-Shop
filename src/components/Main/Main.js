@@ -6,6 +6,16 @@ function Main() {
     
     const [ candyState, setCandyState ] = useState([]);
 
+    useEffect(() => {
+        const state = JSON.parse(localStorage.getItem('candy-state'));
+        setCandyState(state === null ? [] : state);
+    }, []);
+
+    useEffect(() => {
+        const state = JSON.stringify(candyState);
+        localStorage.setItem('candy-state', state);
+    }, [candyState]);
+
     return (
         <>
         <AddCandyForm onSetCandyState={setCandyState}/>
